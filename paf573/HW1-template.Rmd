@@ -1,0 +1,252 @@
+---
+output:
+  html_document:
+    theme: readable
+    df_print: paged
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+# do not change this chunk
+knitr::opts_chunk$set(echo=T, eval=T, fig.width=6, fig.height=4, warning=F, message=F )
+```
+
+
+# HW1 Answers
+**PAF 573**
+
+**YOUR NAME**
+
+
+## load libraries and read in data
+```{r}
+library(tidyverse)
+library(stargazer)
+library(ggplot2)
+library(GGally)
+
+# read in data
+URL <- "https://raw.githubusercontent.com/spiromar/files/main/paf573/data-crime-levitt.csv"
+crime <- read.csv( URL )
+
+```
+
+
+## Problem 1
+### 1a
+What was Detroit’s murder rate in 1991?   
+   **ANSWER:** 
+```{r}
+```
+
+### 1b
+What was Omaha’s murder rate in 1991?  
+   **ANSWER:** 
+```{r}
+```
+
+### 1c
+Did Portland have a mayoral election in 1976? How do you know?  
+   **ANSWER:** 
+```{r}
+```
+
+### 1d
+Is Mesa’s mayoral election held every two years or every four years?    
+   **ANSWER:** 
+```{r}
+```
+
+### 1e
+What is the average (mean) murder rate across all of the cities in Levitt’s sample? What is the lowest murder rate recorded? The highest rate?  
+   **ANSWER:** 
+```{r}
+```
+
+### 1f
+What is the average murder rate across all of the cities in the first year of Levitt’s study period (1970)?     
+   **ANSWER:** 
+```{r}
+```
+
+### 1g
+What is the average murder rate in the last year of Levitt’s study period (1992)?   
+   **ANSWER:** 
+```{r}
+```
+
+### 1k
+What is Detroit’s murder rate in 1970 and 1992?   
+  **ANSWER:** 
+```{r}
+```
+
+
+### 1i
+Reproduce the summary statistics presented in Table 1 of Levitt’s paper. Focus only on recreating the results in the mean, across cities standard deviation, minimum, and maximum columns. Note that some of your figures will deviate slightly from those in Table 1. This is due to some minor changes that Levitt made to his dataset. (Hint: Use stargazer after selecting the appropriate columns)  
+  **ANSWER:** 
+```{r}
+```
+
+## Problem 2
+
+```{r, echo=F}
+# Re-executing code that was already done within the question: 
+crime$mayor_t_F <- as.factor(crime$mayor_t)
+```
+### 2a
+Tabulate the mayoral election year variable. What do the “0” and “1” mean? Interpret the data. For what fraction of the observations did cities hold a mayoral election?   
+  **ANSWER:** 
+```{r}
+```
+
+### 2b
+Produce an analogous set of results and interpretations for the gubernatorial election year variable, `governor_t`.  
+  **ANSWER:** 
+```{r}
+```
+### 2c
+Sometimes we want to tabulate the frequences by more than one categorical variable ...
+```{r, echo=F}
+# Re-executing code that was already done within the question: 
+crime %>% group_by(mayor_t,governor_t) %>% tally()
+```
+
+What is the output of this command telling you? Explain by describing the contents of one row in the table it produced.    
+
+  **ANSWER:**   
+When you are not using R code, you can just type your answer directly into the file like I have with this sentence.
+
+   
+## Problem 3
+
+### 3a
+We will focus first on the relationship between murder and the size of the police force of a city ...
+```{r, echo=F}
+# Re-executing code that was already done within the question: 
+crime %>% select(murder, sworn) %>% ggpairs()
+```
+
+Examine the output it produces. Does the relationship the between the murder rate in a city and the number of sworn officers make sense to you?  
+  **ANSWER:** 
+
+
+### 3b
+To investigate a little more, let’s split Levitt’s sample of city-years into two groups—cities with large police forces and cities with small police forces—and compare various crime rates across the two groups ...
+```{r, echo=F}
+# Re-executing code that was already done within the question: 
+median.sworn <- median(crime$sworn, na.rm=TRUE) 
+crime <- crime %>% mutate(sworn_small = ifelse(sworn <= median.sworn, 1,0))
+```
+
+How many observations are categorized as "small"? How many as "large"? Does this makes sense? Do you have the same number of `NA's before and after?   
+
+  **ANSWER:** 
+```{r}
+```
+
+### 3c
+Compare the murder distributions of the large and small police forces graphically ...
+```{r, echo=F}
+# Re-executing code that was already done within the question: 
+ggplot(crime,aes(x=murder, fill=as.factor(sworn_small))) + 
+  geom_histogram(color="black") 
+```
+
+Eyeball the differences between the distributions, then get the exact means of each distribution by piping the data to the `group_by` and `summarize` functions like we did in the in-class assignment. Which murder rate is larger and by how much? Does this conform to your expectations about the effect of police on crime? In your opinion, what might be driving the differential crime rates?  
+
+  **ANSWER:**
+```{r}
+```
+
+
+### 3d
+But hold on. Perhaps the difference we are seeing is just due to chance. We can run a regression to check and see how likely it would be to observe a sample difference of this size even if there really were no difference between the means of the underlying populations (the null hypothesis). Run a regression to estimate the difference in mean murder rates between cities with large and small police forces. (Save the output of `lm` as an object called `m1`). What is the difference in mean murder rates? Is it statistically significant from zero?  How can you tell?   
+
+  **ANSWER:**
+```{r}
+```
+
+### 3e
+Use the regression output to estimate the mean murder rate conditional on being a city with a large police force. Do this by hand.  
+
+  **ANSWER:**
+
+
+### 3f
+A reliable and repeatable way to do this that will come in handy when you have more complicated regressions is to use the information contained in the `m1` object you saved off. You can access the coefficients using the `coef` function and then use the results as any other variable. 
+
+Use that approach to calculate the mean murder rate for cities with small police forces.     
+
+  **ANSWER:**
+```{r}
+```
+
+
+## Problem 4
+
+### 4a
+The number of sworn police officers in the first column of the table below correspond to the 25th, 50th, and 75th percentiles of the `sworn` distribution ...
+
+<!-- Answer by changing the ?s to numbers -->
+<!-- Then show work below -->
+  **ANSWER:**
+
+**Number of Sworn Police Officers**        | **Conditional Mean of Murder Rate (1970)   **                                   
+------------------------------------------ | ----------------------------------------------
+147.96 (25th percentile) | ? 
+188.25 (50th percentile) | ?
+249.69 (75th percentile) | ?    
+
+Your goal in this problem is to use regression to fill out the table above. Get started by saving off a temporary dataset that includes only the 1970 observations that you will use in your regression:
+```{r}
+workingData <- crime %>% filter(year==70)
+```
+
+<!-- Enter code for regression and calculations here -->
+```{r}
+```
+
+### 4b
+The goal of this question is to visualize how well our regression line does at predicting means conditional on particular values of `sworn`... 
+```{r}
+# Re-executing code that was already done within the question: 
+sworn.p25 <- summary(crime$sworn)[2]
+sworn.p50 <- summary(crime$sworn)[3]
+sworn.p75 <- summary(crime$sworn)[5]
+
+sworn.p25.cm <- crime %>% filter(sworn > (sworn.p25 - 5) & sworn < (sworn.p25 + 5) ) %>%
+  pull(murder) %>% mean(na.rm=TRUE)
+sworn.p50.cm <- crime %>% filter(sworn > (sworn.p50 - 5) & sworn < (sworn.p50 + 5) ) %>%
+  pull(murder) %>% mean(na.rm=TRUE)
+sworn.p75.cm <- crime %>% filter(sworn > (sworn.p75 - 5) & sworn < (sworn.p75 + 5) ) %>%
+  pull(murder) %>% mean(na.rm=TRUE)
+```
+
+Plot the conditional mean values for the 25th, 50th, and 75th percentiles of `sworn` on your graph as red squares [i.e., plot the points (sworn.p25,sworn.p25.cm),(sworn.p50,sworn.p50.cm), and (sworn.p75,sworn.p75.cm) ) on the graph]. Where do those points fall with respect to the regression line? 
+
+  **ANSWER:**
+```{r}
+```
+
+### 4c
+Use regression to complete the following table of conditional means based on those percentiles (i.e., each cell contains the mean murder rate for that cell). Hint: You will need to add a variable to the regression.
+
+<!-- Answer by changing the ?s to numbers -->
+<!-- Then show work below -->
+
+  **ANSWER:**
+
+**Expected Value of Murder Rate (1970), by Number of Sworn Officers and Percent Female Headed Household**
+
+**Nbr Sworn**   | **% Fem Head HH ** |                 |               |                   
+----------------| -------------------|-----------------|----------------
+_               | **25th ** (12.4)   |**50th ** (14.1) |**75th ** (17.5)                 
+**25th ** (147.96) | ? | ? | ? 
+**50th ** (188.25) | ? | ? | ?
+**75th ** (249.69) | ? | ? | ?
+
+
+<!-- Enter code for regression and calculations here -->
+```{r}
+```
