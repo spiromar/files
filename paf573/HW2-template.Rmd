@@ -1,0 +1,77 @@
+---
+output:
+  html_document:
+    theme: readable
+    df_print: paged
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+# do not change this chunk
+knitr::opts_chunk$set(echo=T, eval=T, fig.width=6, fig.height=4, warning=F, message=F )
+```
+
+
+# HW2 Answers
+**PAF 573**
+
+**YOUR NAME**
+
+
+## load libraries and read in data
+```{r, eval=T}
+library(tidyverse)
+library(stargazer)
+library(ggplot2)
+library(GGally)
+library(jtools)
+
+# read in data
+URL <- "https://raw.githubusercontent.com/spiromar/files/main/paf573/data-crime-levitt.csv"
+crime <- read.csv( URL )
+
+```
+
+
+### 1a
+Estimate, report, and graph the results of a regression of murder on police in 1992. (Be sure to save your regression results to an object with a different name.) Interpret the coefficient on `sworn`. 
+
+   **ANSWER:** 
+```{r}
+```
+
+### 1b
+How likely is it that you would have observed this estimate if the null hypothesis were actually true?  
+   **ANSWER:** 
+
+### 1c
+Do the results make sense? In your opinion, what might be responsible for the results?   
+   **ANSWER:** 
+
+
+# Problem 2
+Now, let’s incorporate some additional control variables into the model. Specifically, add the covariates listed in Table 3 of Levitt’s paper (i.e., all but the police variable, as this is already in your model). These are the variables you will need: `x_unemp` `x_welfare` `x_education`  `x_a15_24` `x_black` `x_femhea`. (You will notice that the paper uses log transformations (ln) of the variables. Don't worry about that for now, nor the fact that your estimates will not look the same as Table 3. We will deal with that in the a future class.) 
+
+### 2a
+Why might it be important to include these particular controls in a model of city murder rates? What are they intended to capture?  
+   **ANSWER:** 
+
+
+### 2b
+With the inclusion of these control variables, the model is now a multiple regression model. Estimate the model for 1992.	Report the regression table (using `summ`) and interpret the coefficient on `sworn`. Be sure to comment on how likely is it that you would have observed each estimate if the null hypothesis were actually true.   
+   **ANSWER:** 
+```{r}
+```
+
+
+### 2c
+How does the coefficient on `sworn`  compare from those in the simple univariate model? Why do they differ?   
+   **ANSWER:** 
+
+### 2d
+Visualize the results of the 1992 results using `effect_plot`. For what range of values of `sworn` do you have the most confidence? For what range the least?  
+   **ANSWER:** 
+```{r}
+```
+
+
