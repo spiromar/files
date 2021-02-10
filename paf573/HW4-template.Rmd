@@ -1,0 +1,116 @@
+---
+output:
+  html_document:
+    theme: readable
+    df_print: paged
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+# do not change this chunk
+knitr::opts_chunk$set(echo=T, eval=T, fig.width=6, fig.height=4, warning=F, message=F )
+```
+
+# HW4 Answers
+**PAF 573**
+
+**YOUR NAME**
+
+# Load libraries 
+```{r, echo=T}
+library(tidyverse)
+library(GGally)
+library(jtools)
+library(car)
+```
+
+# Read in data 
+```{r, echo=T}
+# read in data 
+URL <- "https://raw.githubusercontent.com/spiromar/files/main/paf573/smoking.csv"
+smoking <- read.csv( URL )
+```
+
+
+# Problem 1  
+### 1a
+Estimate the probability of smoking for (i) all workers, (ii) workers affected by workplace smoking bans, and (iii) workers not affected by workplace smoking bans.
+```{r}
+# to get you started, use this table of values
+smoking %>% group_by(smkban, smoker) %>% tally() 
+
+# then calculate the desired relative frequencies. for example, 
+# here is the calculation for the relative frequency of smokers 
+# in workplaces with smoking bans
+1293 /(4805 + 1293)
+```
+
+```{r}
+# calculate relative frequency of smokers in workplaces 
+# without smoking bans here
+
+
+# calculate relative frequency of smokers across all workers here
+
+
+```
+### 1b
+What is the difference in the probability of smoking between workers affected by a workplace smoking ban and workers not affecgted by a workplace smoking ban? User a linear probability model to determine wither this difference is statistically significant.
+```{r}
+
+```
+
+### 1c
+Estimate a linear probability model with the smoker as the dependent variable and the following regressors: smkban, female, age, age2, hsdrop, hsgrad, colsome, colgrad, black, and hispanic.
+```{r}
+# you can create the age-squared variable with this line
+smoking <- mutate(smoking, age2=age*age)
+```
+
+```{r}
+# put linear probability model here
+# save it as mod1c 
+
+```
+
+### 1d
+Test the hypothesis that the coefficient on smkban is zero in the population version of the regression in (c) against the alternative that it is nonzero at the 5% significance level.
+```{r}
+# hint: don't need to estimate anything new
+```
+
+
+### 1e
+Test the hypothesis that the probability of smoking does not depend on the level of education in the regression in (c). Does the probability of smoking increase or decrease with the level of education?
+```{r}
+# hint: use linearHypothesis function with robust standard errors
+# also, read data description carefully to understand what 
+# education level was left out and should be treated as the reference category
+
+```
+
+### 1h.i
+Mr. A is white, non-Hispanic, 20 years old, and a high school dropout. Using a linear probability model in 1c and assuming that Mr. A is not subject to a workplace smoking ban, calculate the probability that Mr. A smokes. Carry out the calculation again, assuming that he is subject to a workplace smoking ban. What is the effect of the smoking ban on the probability of smoking?
+```{r, eval=F}
+# be sure to use the linear prob model in 1c, not probit
+# also, a reminder that you can access specific coeficients 
+# in a save model object. For example, here is how you would access
+# the age coefficient from a previously saved model called mod1c
+coef(mod1c)["age"]
+```
+
+```{r}
+# Put Mr. A probability calculation without smoking ban here
+
+# Put Mr. A probability calculation with smoking ban here
+
+```
+
+### 1h.ii
+Repeat 1h.i for Ms. B, a female, black 40-year-old college graduate.
+```{r}
+# Put Ms. B probability calculation without smoking ban here
+
+# Put Ms. B probability calculation with smoking ban here
+
+```
