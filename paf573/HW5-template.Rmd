@@ -1,0 +1,114 @@
+---
+output:
+  html_document:
+    theme: readable
+    df_print: paged
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+# do not change this chunk
+knitr::opts_chunk$set(echo=T, eval=T, fig.width=6, fig.height=4, warning=F, message=F )
+```
+
+# HW5 Answers
+**PAF 573**
+
+**YOUR NAME**
+
+# Load libraries 
+```{r}
+library(tidyverse)
+library(jtools)
+library(gridExtra)  # containas grid.arrange function
+```
+
+# Read in data 
+```{r}
+# read in data 
+URL <- "https://raw.githubusercontent.com/spiromar/files/main/paf573/data-crime-levitt.csv"
+crime <- read.csv( URL )
+```
+
+# Problem 1 
+Import the crime data Levitt’s paper, entitled “Using Electoral Cycles in Police Hiring to Estimate the Effect of Police on Crime.” In this problem we are going to again examine the relationship between the size of the police force and murder rate, only this time we will use regression that log tranform some of the key variables. 
+
+## 1.1
+Estimate and plot the following regression using only the 1992 data:  
+```{r}
+workingData <- crime %>% filter(year==92)
+mLevelLevel <- lm(murder ~ sworn , data=workingData)
+summ(mLevelLevel, robust=T, digits = 4)
+effect_plot(mLevelLevel, pred=sworn, plot.points = T) # plot regression
+```
+
+Interpret the coefficient on `sworn`.
+
+**ANSWER:**
+
+
+## 1.2	
+Create two new variables in the crime dataset: one new variable for the natural log of murder (call it ln_murder) and another new variable for the natural log of sworn (call it ln_sworn). Note: You will need to recreate your workingData in order for it to include the new variables you create in the crime dataset.
+```{r}
+crime <- crime %>% mutate(ln_murder = log(murder),
+                          ln_sworn = log(sworn)
+                          )
+workingData <- crime %>% filter(year==92)
+```
+
+Use `ggplot` to create a histogram of each of the 2 new variables, as well as 2 other histograms for the untransformed versions of the variables. Use only the 1992 data. `grid.arrange` to show all 4 histograms together in one figure. 
+
+**ANSWER:**
+
+```{r}
+```
+
+
+## 1.3	
+Estimate and plot the same regresssion as in 1.1 using only the 1992 data, only this time use the natural log of the sworn:
+```{r}
+mLevelLog <- lm(murder ~ ln_sworn , data=workingData)
+summ(mLevelLog, robust=T, digits = 4)
+effect_plot(mLevelLog, pred=ln_sworn, plot.points = T)
+```
+
+Interpret the coefficient on `sworn`.
+
+**ANSWER:**
+
+
+## 1.4  
+Note that the regression plot in 1.3 uses ln_sworn on the x-axis. To get a better understanding of what the log tranformation of the sworn predictor did to the regression, it is useful to recreate the plot using the same regression model, only this time keep the x-axis as the same scale as `sworn`. `effect_plot` will do this for you if you give a regression where you used the `I()` function to transform the variable rather than the ln_sworn variable. The steps are as follows: 
+```{r}
+mLevelLog2 <- lm(murder ~ I(log(sworn)) , data=workingData)
+summ(mLevelLog2, robust=T, digits = 4)
+
+# notice that you have to give it the data argument 
+effect_plot(mLevelLog2, pred=sworn, plot.points = T, data=workingData)
+```
+
+What did taking the natural log of sworn do to the modeling relationship between `sworn` and `murder`?
+
+**ANSWER:**
+
+
+## 1.5  
+Estimate the same regresssion as in 1.1 using  the 1992 data, only this time use the natural log of murder. Interpret the coefficient on `sworn`.
+
+**ANSWER:**
+
+```{r}
+```
+
+## 1.6  
+Estimate and plot the same regresssion as in 1.1 usingthe 1992 data, only this time also both the natural log of murder and the natural log of sworn. Interpret the coefficient on `sworn`.
+
+**ANSWER:**
+
+```{r}
+```
+
+
+
+# Problem 2  
+Please redo the in-class activity on interaction models on your own, including recreating your own data from the simulation.You do not need to turn this in.
