@@ -1,0 +1,86 @@
+---
+output:
+  html_document:
+    theme: readable
+    df_print: paged
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+# do not change this chunk
+knitr::opts_chunk$set(echo=T, eval=T, fig.width=6, fig.height=4, warning=F, message=F )
+```
+
+# HW6 Answers
+**PAF 573**
+
+**YOUR NAME**
+
+# Load libraries 
+```{r, echo=T}
+library(tidyverse)
+library(jtools)
+```
+
+# Read in data 
+```{r, echo=T}
+# read in data 
+URL <- "https://raw.githubusercontent.com/spiromar/files/main/paf573/greening.csv"
+lots <- read.csv( URL )
+```
+
+
+# Problem 1  
+Run a regression that estimates the difference in the mean number of vandalism calls in 2018 between the lots that were greened and those that were not. 
+
+```{r}
+# put regression here
+```
+
+What are some reasons why the difference you estimated might be biased upward? What are some reasons that it might be biased downward?  
+
+**ANSWER:**
+
+# Problem 2
+Create a plot of the mean vandalism calls vs year, breaking out the means by whether or not the lot was in the greened group:
+```{r}
+ggplot(lots, aes(x=year, y=vcalls, group=greened, color=as.factor(greened))) + 
+  stat_summary(fun = "mean", geom = "point") + 
+  stat_summary(fun = "mean", geom = "line")
+```
+
+### 2.1  
+What does this plot imply about which lots were selected for greening? What does it tell you about whether or not the greening had an effect on vandalism?
+
+**ANSWER:**
+
+### 2.2  
+Estimate the effect of greening on vandalism by calculating a difference in difference estimate by hand. Use the year right before (2017) and the year right after the greening (2018).
+
+**ANSWER:**  
+```{r}
+# use this space to get the data you need and do the calculation
+```
+
+
+# Problem 3
+### 3.1  
+Write down an equation for an interaction model that will give you the same information as in Q2.2. 
+
+**ANSWER:**
+
+### 3.2  
+Estimate the model you wrote down in Q3.2. What is the differnce-in-differences estimate of the effect of greening on vandalism? Is it statistically significant? 
+
+```{r}
+# show work here
+
+```
+
+**ANSWER:**
+
+### 3.3  
+Interpret the other coefficients of the model, including the intercept.
+
+**ANSWER:**
+
