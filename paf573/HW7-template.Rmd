@@ -1,0 +1,104 @@
+---
+output:
+  html_document:
+    theme: readable
+    df_print: paged
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+# do not change this chunk
+knitr::opts_chunk$set(echo=T, eval=T, fig.width=6, fig.height=4, warning=F, message=F )
+```
+
+# HW7 Answers
+**PAF 573**
+
+**YOUR NAME**  
+
+
+# Problem 1
+Please re-read Section 5.2 of Mastering Metrics.
+
+### 1.1  
+What policy question are the authors addressing in this section? In regular words (not statistics speak), how are they attempting to answer their question?
+
+**ANSWER**  
+
+
+### 1.2  
+The comparisons they want to make here are not as straightforward as they were in the minimum wage example. What are some of the complications?
+
+**ANSWER**  
+
+
+# Problem  2
+### 2.1  
+I have uploaded part of the dataset used to conduct the analysis in that section in a file called mlda.csv. The dataset contins the death rates (of all types) for 18-20 year olds in 50 states plus the District of Columbia for each of 14 years, as well as the fraction of 18-20 year olds who can legally drink in each year. Import and examine this data.
+
+```{r, echo=T}
+# load libraries
+library(tidyverse)
+library(jtools)
+library(plm)
+library(lmtest)  # for coeftest function
+
+# read in MLDA data 
+URL <- "https://raw.githubusercontent.com/spiromar/files/main/paf573/mlda.csv"
+mlda <- read.csv( URL )
+
+# examine data
+# legal = fraction of 18-20 year olds who can legally drink
+# mrate = mortality rate of 18-20 year olds per 100,000
+glimpse(mlda)
+head(mlda, 20)
+table(mlda$year)
+table(mlda$state) 
+```
+
+### 2.2  
+Let's start the analysis by simply examining the trend of death rates over time in the country. You will notice that there is a downward trend.
+```{r, echo=T}
+ggplot(mlda, aes(x=year, y=mrate)) + 
+  stat_summary(fun = "mean", geom = "point") + 
+  stat_summary(fun = "mean", geom = "line") 
+```
+
+Our general approach here is going to be to compare changes over time within states to each other, so let's break out these trends by state. To do this we can use a `facet_wrap` layer. We also do not need to take the mean within each year anymore, since there is only one observation per year per state:
+```{r, echo=T}
+ggplot(mlda, aes(x=year, y=mrate)) + geom_point() + facet_wrap( ~ state)
+```
+
+Press the Zoom button in the R Studio console to make this graph as big as possible on your screen, and examine the trends. You will notice that most states are similar to the national trend, but some states have more variance than others. 
+
+### 2.3  
+What we more interested in, however, is whether changes in the drinking laws within the states resulted in changes to the death rates. We can take an imperfect peak at this by coloring the points by the applicable law in any given year. The `legal` variable gives us this information. It is a continuous variable, but for the purposes of the plot, let's just use one color for when no 18-20 year olds are allowed to drink (legal = 0) and another color when at least some are allowed (legal > 0):
+```{r, echo=T}
+ggplot(mlda, aes(x=year, y=mrate, color=(legal > 0 ))) + geom_point() + facet_wrap( ~ state)
+```
+
+The first thing to notice is that some states don't change colors. Those states are not going to provide as much usuable information for our purposes. Other states change colors once or more. The most interesting thing is to try to see what happens to the death rate when the color does change. If we think the minimum legal drinking age has an effect, as a first pass we would expect it to go up when the law becomes more lax, and down when the law becomes more stringent. Stop for a moment and look closely at the graph with this in mind. Note also that at this point, we haven't relied on any particlar knowledge of statistics or probability. We are simply applying a little logic to see if we can tease out the effect. 
+
+But here is where we get a little stuck. As we have said many times in the course, the correlation between policy change and outcome is what might be reported in the news, or thrown around as evidence in political discourse, but it is not what we really want to know. What we really want to know when the colors change on a state's graph is the counterfactual outcome for that state: *What would have happened to the death rate if insetead of changing, the law had actually remained the same?*  To answer this quesiton, we have to make some choices. One option is to find a similar state that did not experience the change, and conduct a difference-in-differences analysis. That is what we did last week with the minimum wage. Another option is to create a counterfactual using data from all the states that had a different policy during the time period of interest, and make a difference-in-differences comparison. Of course, we don't have to stop at just one state. We could make similar difference-in-differences comparisons for all states at all times where their policies changed. It is this generalization of the difference-in-differences logic that a fixed effects model enbles us to accomplish. In fact, Equation 5.5 on p.194 of the Mastering Metrics book gives us the exact model we need in this case. 
+
+# Problem 3
+In this problem, we will estimate Equation 5.5 in Mastering Metrics. More specifically, run a regression that recreates the value in first row of Column (1) of Table 5.2. Do not get confused by the summation notation in that equation. The summation terms essentially correspond to including state and time fixed effects. (See Footnote 8 in the book for what that is the case.) Asso, note that this specification uses the continous version of `legal` and not the some-or-nothing simplification we used in our graphs.
+
+### 3.1  
+Estimate the regression using the binary regressor method, then interpret the coefficient on the legal variable. Be sure that state and year are included as factors. For now, do not worry about clustering the standard errors.
+```{r}
+# put regression here
+
+```
+
+**ANSWER**  
+
+
+#### 3.2 
+Estimate the regression using `plm`. Use `coeftest` to cluster the standard errors by state. 
+```{r}
+# put plm regression here
+
+
+```
+
