@@ -44,7 +44,7 @@ library(jtools)
 
 # show me the first 20 lines of your data for the important columns
 # use something like this to do so:
-# yourDatasetName %>% select(importantVariable1,importantVariable2, ...) %>% head()
+# yourDatasetName %>% select(importantVariable1,importantVariable2, ...) %>% head(20)
 ```
 
 # Sample Regression
