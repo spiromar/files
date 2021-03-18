@@ -1,0 +1,57 @@
+---
+output:
+  html_document:
+    theme: readable
+    df_print: paged
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+# do not change this chunk
+knitr::opts_chunk$set(echo=T, eval=T, fig.width=6, fig.height=4, warning=F, message=F )
+```
+
+# HW8 Answers
+**PAF 573**
+
+**YOUR NAME**  
+
+
+# Question  
+Include a one or two paragraph description of the question you are asking in your project
+
+**ANSWER**  
+
+
+# Data
+Describe the data you are using.
+
+Where did it come from? Include a link to a website if appropriate.
+
+Is it longitudinal or cross-sectional?
+
+What variable(s) are you using to measure your outcomes?
+
+What variable(s) are your key regressors of interest?
+
+**ANSWER**  
+```{r}
+# read in your data here and any additional libraries you need
+# you can point to your own working directory. I don't need to be able 
+# to read in the data myself. 
+library(tidyverse)
+library(jtools)
+
+# show me the first 20 lines of your data for the important columns
+# use something like this to do so:
+# yourDatasetName %>% select(importantVariable1,importantVariable2, ...) %>% head()
+```
+
+# Sample Regression
+Run a single regression using the an outcome variable and one key regressor. If you have any thoughts about where you are going beyond this with your analysis, please share and I will give you feedback. 
+
+**ANSWER**  
+```{r}
+
+```
+
