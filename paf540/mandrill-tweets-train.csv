@@ -1,0 +1,301 @@
+doc_id,text,class
+1,[blog] Using Nullmailer and Mandrill for your Ubuntu Linux server outboud mail:  http://bit.ly/ZjHOk7  #plone,APP
+2,[blog] Using Postfix and free Mandrill email service for SMTP on Ubuntu Linux server:  http://bit.ly/11HmDZz  #plone,APP
+3,@aalbertson There are several reasons emails go to spam. Mind submitting a request at http://help.mandrill.com  with additional details?,APP
+4,"@adrienneleigh I just switched it over to Mandrill, let's see if that improve the speed at which the emails are sent.",APP
+5,@ankeshk +1 to @mailchimp We use MailChimp for marketing emails and their Mandrill app for txn emails... @sampad @abhijeetmk @hiway,APP
+6,@biggoldring That error may occur if unsupported auth method used. Can you email us via http://help.mandrill.com  so we can get details?,APP
+7,@BlueHayes mind sending us some details about your account via http://help.mandrill.com  ? Things look correct here but we may need some detail,APP
+8,"@cemsisman It can vary, but if sending really low volumes, may not be worth it. Can offer detail - submit request at http://help.mandrill.com ",APP
+9,@compactcode Have you checked out Mandrill (@mandrillapp)? It's a transactional email service that runs ... https://longreply.com/r/66c91ea4 ,APP
+10,"@devongovett I'm using Mandrill, but been saving issues with some domains getting blocked with no bounce message. Very hard to debug.",APP
+11,@devongovett Mandrill seems pretty cheap (by Mailchimp),APP
+12,@dzuelke The option to set up the Mandrill integration is only available to the account owner. If you ar... https://longreply.com/r/5c31a7d7 ,APP
+13,@dzuelke You should be able to login to the Mandrill account directly by using the same username and pas... https://longreply.com/r/2f58968b ,APP
+14,@edocr Can you send an email via http://help.mandrill.com with details about what page is crashing and where you're seeing issues?,APP
+15,"@eladlouni Et oui, Mandrill est moins cher, mais idem : ils ne permettent pas de gérer des listes de contact par exemple... @camj59",APP
+16,"@eladlouni La raison : Mandrill = Mailchimp, et ils ne veulent pas cannibaliser... @camj59",APP
+17,@eladlouni Mandrill = pas de list management par ex. (ils ne veulent pas tuer Mailchimp qui est 30 à 40 fois plus cher ! cc @camj59,APP
+18,@Elie__ @camj59 jparle de relai SMTP!1 million de mail chez mandrill / mois comparé à 1 million sur lite sendgrid y a pas photo avec mailjet,APP
+19,@Elie__ @camj59 mandrill! Sendgrid! Sans parler d'amazon,APP
+20,@EricCandino They're unfortunately not for sale but drop us a line via http://help.mandrill.com  and we'll see what we can find!,APP
+21,"@Flo_Rian Not seeing overall sending issues, but we'd want to look at your account - can you submit a request via http://help.mandrill.com  ?",APP
+22,@frankioh @sinue mmm no. Mandrill y Sendgrid son + bien p/emails transaccionales. Mailchimp es + bien p/mkt. Admon de listas de dist. y tal.,APP
+23,@gidogeek You can see what we've been working on and get a general idea of our plans at http://blog.mandrill.com  Updates posted every Friday!,APP
+24,@guillaumepotier There are several reasons emails go to spam. Mind submitting a request at http://help.mandrill.com  with additional details?,APP
+25,@icntmx Yep! We'd be glad to. Would you mind submitting a request at http://help.mandrill.com ?,APP
+26,"@JeremyWeir If you submit a request at http://help.mandrill.com , we'll get back to you with some ideas and help brainstorm if needed!",APP
+27,@josscrowcroft Mind submitting a request via http://help.mandrill.com  with some additional details so we can help troubleshoot?,APP
+28,@juanpabloaj Official clients have inline doc info but our support team can help with examples too - submit a request http://help.mandrill.com ,APP
+29,@kanonbulle No issues delivering to the Hotmail domain currently. Mind submitting a request at http://help.mandrill.com  w/ account details?,APP
+30,"@kennydude @devongovett Yeah, Mandrill is well worth a look.",APP
+31,"@kennyfraser Already cleaned up client & delisted IP, but #enginehosting support can share some alternatives like http://mandrill.com  too",APP
+32,@khiger вот сервис http://mandrill.com/ ,APP
+33,"@ljharb When I looked last year, Mandrill’s pricing and API was a bit confusing, but it now seems to have straightened out excellently.",APP
+34,@mandrill Realised I did that about 5 seconds after hitting send!,APP
+35,@mandrillapp could you add the defaults (if any) to your SMTP header docs? http://help.mandrill.com/entries/21688056-Using-SMTP-Headers-to-customize-your-messages … Thanks!,APP
+36,@mandrillapp increases scalability ( http://bit.ly/14myVuH  ) then decreases pricing ( http://bit.ly/13uJA7s  ) #selfinducedcannibalization,APP
+37,@mandrillapp There are some issues with your mandrill npm module. What's your preferred way of documenting bugs and issues?,APP
+38,"@mandrillapp tried refreshing, the link (line 184 on the homepage) goes here http://help.mandrill.com/forums/20689696-smtp-integration …",APP
+39,"@mandrillapp we cannot even find out the last email sent to, as mandrill page crashes when enquiring",APP
+40,@mandrillapp yeap! that's what I meant throttling - throttling before it gets to Mandrill,APP
+41,@manojranaweera Looks like bulk increasing volume considerably. Our support team can help with tips to manage warmup: http://help.mandrill.com ,APP
+42,@marcelosomers @nathansmith FWIW we dumped Postmark in favor of Mandrill. Highly recommended for transactional email.,APP
+43,@masuga Use a service like Mandrill not EE mail.,APP
+44,@matt_pickett if u want to reach out to other Mailchimp/Mandrill users try: http://awe.sm/r0jHw  http://awe.sm/eEBZ1 ,APP
+45,@mattwdelong Mind submitting a request at http://help.mandrill.com with your username and workflow so we can investigate?,APP
+46,@meeiw @henrik @mnordin håller själv på med en för mandrill. Har ni tittat på: https://github.com/aceofspades/sendgrid_postback …,APP
+47,"@michaelmior If you're looking to sync unsubscribed addresses with both MailChimp and Mandrill, the best... https://longreply.com/r/1445d273 ",APP
+48,@nathanbowser Mind submitting a request with details at http://help.mandrill.com ? We're glad to have a look!,APP
+49,"@nathansmith For production, Mailchimp seems to have a good transactional email system as well: http://mandrill.com/ ",APP
+50,@reevesman Mandrill is a transactional e-mail service designed to send customized one-to-one e-mails lik... https://longreply.com/r/8c906b44 ,APP
+51,@reubenpressman @tinyletter you can use @mandrillapp to do that! http://eepurl.com/oDbf5 ,APP
+52,@richaskew Can you give us some details about where you're seeing that? Submit a request at http://help.mandrill.com ,APP
+53,"@rodbegbie You'd probably have more success with @mandrillapp. I'm not the best postman, I get lost very easily.",APP
+54,@rossdeane Mind submitting a request at http://help.mandrill.com with account details if you haven't already? Glad to take a look!,APP
+55,@SanjuBhambhani No issues currently. Mind submitting a request at http://help.mandrill.com with account information and details?,APP
+56,"@Sinue depende de lo que necesites, para simple esta mandrill",APP
+57,"@Sinue el equivalente de sengrid es mailchip. Mandrill es mas un smtp y tu dices en que url mande la info de las aperturas, click, etc",APP
+58,"@Tamiyadd If you haven't already, can you submit a request at http://help.mandrill.com  with account details so we can take a look?",APP
+59,@thatmarvin We use a custom algorithm for inlining CSS specifically for Mandrill,APP
+60,@traskjd they ‘migrate’ everything to Mandrill?,APP
+61,"@treize2 No general issues. Can you give us more detail of the error(s) you're seeing? Can send more detail via http://help.mandrill.com , too",APP
+62,"@variuxdavid Possibly, depends on what you're looking to do exactly. Mind submitting a request at http://help.mandrill.com  with more details?",APP
+63,@veroapp Any chance you'll be adding Mandrill support to Vero?,APP
+64,@wesbos Mandrill is good but I've noticed a lack of attention to detail on @MailChimp's secondary properties (i.e. TinyLetter),APP
+65,"#freelance #Jobs Mandrill Template design and strategy implementation by eshuys: Hi there,     I have just had... http://bit.ly/Xy4VJw ",APP
+66,#HowTo access @mandrillapp by @mailchimp for sending transactional emails with your website http://ow.ly/jJaDg ,APP
+67,"#InternetMarketing Mandrill Template design and strategy implementation by eshuys: Hi there,     I have just h... http://bit.ly/118UsEd ",APP
+68,"#job #freelance Mandrill Template design and strategy implementation by eshuys: Hi there,     I have just had ... http://adf.ly/M0jIC ",APP
+69,#Job Integrate Mandrill or Send Grid with Ecommerce Store by kate281: We want to push all transactional e... http://bit.ly/11HtHa9  #php,APP
+70,"#job Mandrill Template design and strategy implementation by eshuys: Hi there,     I have... http://bit.ly/123HNFe  #freelancer #project",APP
+71,#Job Mandrill Webhooks Interspire For Bounce Processing Integration by sanu1255: We have a set up of Inte... http://bit.ly/YH6XHT  #php,APP
+72,#jobs PHP Developer with Bullhorn API and Mandrill Experience Needed | Elance Job: We have built a job listing... http://bit.ly/Xg24EK ,APP
+73,#jobs4u #jobs Mandrill Customer-Support Geek http://bit.ly/18d2eND  #ATL #atlanta #GA,APP
+74,#Mandrill is cool! Would probably be using this to SMTP based approach for sending transactional emails from now on. ,APP
+75,#MySql Mandrill Webhooks Interspire For Bounce Processing Integration by sanu1255: We have a set up of Intersp... http://bit.ly/YH7qtF ,APP
+76,#Newsletters in #WordPress – Use #SendGrid or #Mandrill by @chrislema http://bit.ly/12R8USh  #wp #plugins #plugin,APP
+77,"#PhotoshopDesign. Mandrill Template design and strategy implementation by eshuys: Hi there,     I have just ha... http://bit.ly/118UsEd ",APP
+78,#PHP Integrate Mandrill or Send Grid with Ecommerce Store by kate281: We want to push all transactional email ... http://bit.ly/10wBvdy ,APP
+79,"#Templates Mandrill Template design and strategy implementation by eshuys: Hi there,     I have just had ... http://bit.ly/ZTADzB  #Job",APP
+80,#wcmelb question: anyone integrated Mandrill with #BuddyPress ?,APP
+81,#wcmelb question: how to integrate wp_mail() with MailChimp's Mandrill?,APP
+82,"After looking at its website, not sure what @MailChimp's Mandrill does, but gosh darn its #logo is nice. #design pic.twitter.com/9OEGuXGJ4T",APP
+83,And we're live! Come hear @levelos talk about using MailChimp and Mandrill for newsletters in #Drupal! http://bit.ly/ZAWI4I ,APP
+84,arrays would seem to be a portion of the solution. but its an area I don't know much about http://jsfiddle.net/mandrill/GAwTw/4/ … #javascript,APP
+85,At what point do I give up on @SendGrid and switch over to Mandrill? http://mandrill.com/ ,APP
+86,Can anyone tell me why this isn't working? http://jsfiddle.net/mandrill/K8EBE/3/ … #javascript #jquery,APP
+87,"Check out what we've been up to this week, including a pricing change: http://blog.mandrill.com/friday-notes-2013-03-08.html …",APP
+88,De l'email transactionnel facile et pas cher avec #Mandrill et #Redhen sous #Drupal : http://bit.ly/Z5e5wa  - Yep.,APP
+89,"For ppl looking to switch from Sendgrid, there's Mandrill from Mailchimp. Up to 12K emails/mo $0. http://mandrill.com  (cc: @myShoggoth)",APP
+90,Found this @mandrillapp knowledge base article on inbound email webhooks useful. Works well. Biased recommendation++. http://help.mandrill.com/entries/22092308-what-is-the-format-of-inbound-email-webhooks …,APP
+91,"From Coworker about using Mandrill:  ""I would entrust email handling to a Pokemon"".",APP
+92,"Guys,buat email wordpress,enakan Sendgrid atau Mandrill?",APP
+93,Holy shit. It’s here. http://www.mandrill.com/ ,APP
+94,"http://mandrill.com  Estimated Traffic Net Worth $97,943 http://www.Freewebsitereport.org/www.mandrill.com …",APP
+95,"If any #eecms devs out there develop with MAMP Pro, these are settings you need to send emails via Mandrill. https://www.evernote.com/shard/s9/sh/f6377f27-aa93-48f4-a9dc-4b10adfdf43f/dec196d3e531c3dfff1ceaed8a21452c/res/bc74b49c-e724-4b29-abfb-cb82032732c0/skitch.png …",APP
+96,In light of the @sendgrid fiasco it seems like a good day to make an inappropriate sexual joke about the competing service called “ManDrill”,APP
+97,Integrate Mandrill or Send Grid with Ecommerce Store by kate281 http://bit.ly/10JzwTc  #freelance,APP
+98,"Internet-Marketing Mandrill Template design and strategy implementation by eshuys: Hi there,     I have just h... http://bit.ly/ZTBPTB ",APP
+99,"Jo tak to bylo trapny, no:) https://github.com/fabiancz/mandrill-nette/commit/d3eb22c0ca99651a7abfc380d7b47253bbb4832e … Jdu radsi spat. #dev",APP
+100,Just a quick PSA:  http://mandrill.com  is awesome if you need email send/receive services for your app.,APP
+101,Just love @mandrillapp transactional email service - http://mandrill.com Sorry @SendGrid and @mailjet #timetomoveon,APP
+102,Looking for Designer Mandrill Webhooks #Interspire For Bounce Processing Integration by… http://goo.gl/fb/6gXM3 ,APP
+103,Looking into swapping out @Sendgrid with @Mandrill for Sōsh emails. Anyone done this? Any words of warning?,APP
+104,"Looking to send #transactional (one-to-one, triggered email from apps)? MailChimp's new product, Mandrill... smtp free",APP
+105,Maldito Gmail que fica pedindo login pela web com captcha para email automático de um sistema. Vou testar o Mandrill http://help.mandrill.com/entries/21738467-Using-Mandrill-s-SMTP-integration-with-Web-Frameworks …,APP
+106,mandrill (0.0.3): http://is.gd/LTn1aY  Ruby gem for interacting with the Mandrill API.,APP
+107,mandrill 1.0.22: A CLI client and Python API library for the Mandrill email as a service platform. http://bit.ly/160NKQ3 ,APP
+108,mandrill 1.0.29: A CLI client and Python API library for the Mandrill email as a service platform. http://bit.ly/161vNVJ ,APP
+109,Mandrill API – An alternate to SMTP and SendMail Email Transport: We live in the world where Cloud Computing a... http://bit.ly/12ThlLY,APP
+110,Mandrill Template design and strategy implementation by eshuys http://bit.ly/ZTBpwt  #freelance,APP
+111,"Mandrill Template design and strategy implementation by eshuys: Hi there,     I have just had... http://bit.ly/125h1bH  #freelance #jobs",APP
+112,Mandrill Webhooks #Interspire For Bounce Processing Integration by sanu1255… http://goo.gl/fb/XOPpn  #freelance #job,APP
+113,Mandrill Webhooks Interspire For Bounce Processing Integration by sanu1255 http://bit.ly/118ybVg  #Job #career #freelance,APP
+114,mandrill-api (1.0.19): http://npmjs.org/package/mandrill-api … The official API client for the Mandrill email as a service product.,APP
+115,mandrill-api (1.0.25): http://is.gd/wKfRyo  A Ruby API library for the Mandrill email as a service platform.,APP
+116,mandrill-rails (0.0.4): http://is.gd/nobiJe  Rails integration for Mandrill,APP
+117,Measuring Transactional Email Performance with Mandrill - http://goo.gl/qaGX2,APP
+118,Modules Unraveled: 053 Using Mailchimp and Mandrill to Send Newsletters in Drupal with Lev T... http://bit.ly/148Jf4M  via @DrupalPlanet,APP
+119,Modules Unraveled: 053 Using Mailchimp and Mandrill to Send Newsletters in Drupal with Lev Tsypin - Mo... http://bit.ly/YO8iuu  #drupal,APP
+120,Modules Unraveled: 053 Using Mailchimp and Mandrill to Send Newsletters in Drupal with Lev Tsypin - Modules Un... http://bit.ly/XrAhyS ,APP
+121,New from @ChrisLema: Newsletters in WordPress  Use SendGrid or Mandrill http://ht.ly/2wtD1T ,APP
+122,Newsletters in WordPress - Use SendGrid or Mandrill http://goo.gl/KMGdg  via @chrislema,APP
+123,Newsletters in WordPress – Use SendGrid or Mandrill: If you're pushing out newsletters in WordPress? Here are ... http://clema.cc/ZET0L3 ,APP
+124,Nice.. http://www.mandrill.com ,APP
+125,"Ótima ferramenta para envio de e-mails automáticos em sistemas (confirmação, esqueci senha, notificações...): http://mandrill.com ",APP
+126,Our love affair with transaction emails from CritSend to SendGrid to Mandrill: When we started edocr.co... http://bit.ly/10cOuon  #edocr,APP
+127,"Our new subscriber profile page: activity timeline, aggregate engagement stats, and Mandrill integratio #BJCBranding http://bit.ly/13waU5c ",APP
+128,Parse Partners with MailChimp to Bring Power of Mandrill Email API to Parse-Powered Apps http://bit.ly/UNtj4n ,APP
+129,"progress, of a sort :/  http://jsfiddle.net/mandrill/GAwTw/2/ … I'm thinking an array might be needed, was trying to avoid :/ #javascript",APP
+130,Psyched that @MailChimp just dropped the prices of Mandrill (their SendGrid  Amazon SES competitor). Ready to rock http://blog.mailchimp.com/unifying-mandrill-and-mailchimp-data/ …,APP
+131,Released a couple of updates to Escort this week (some Mandrill and PostageApp fixes). 3rd-party email for #eecms: http://devot-ee.com/add-ons/escort ,APP
+132,RT @chrislema: Newsletters in #WordPress - Use SendGrid or Mandrill http://goo.gl/ByWBF ,APP
+133,RT @freedomwalker77: Newsletters in WordPress - Use SendGrid or Mandrill http://goo.gl/ByWBF  via @chrislema,APP
+134,Sengrid ó Mandrill ??? suggestions?,APP
+135,"TAH-DAH! http://jsfiddle.net/mandrill/wLTns/5/ … It now does what I wanted it to at this stage, tomorrow autoplay. #jquery",APP
+136,The Mandrill team dishes about building a status page to stand out among a sea of green check marks: http://eepurl.com/xTHgX ,APP
+137,The wisest mandrill in the jungle. Rafiki! 🌿 @ Disney's Animal Kingdom http://instagram.com/p/X-M_WcxtA7/ ,APP
+138,"This week: move TDP to either DigitalOcean or Linode, switch mail services to Mandrill and provisioning to sunzi.",APP
+139,"This week's release notes are up! More template options, quota changes and message prioritization: http://blog.mandrill.com/broader-templates-quota-control.html …",APP
+140,To Whom It May Concern: @WebPlatform (http://j.mp/10TOHxc ) and @mandrillapp (http://j.mp/10TOHxg ) have the same logo. That is all.,APP
+141,Transactional Email Services Review for Application Developers: Mandrill vs. SendGrid http://bit.ly/ZmRCsz ,APP
+142,Using Nullmailer and Mandrill for Your Ubuntu Server Outboud Mail http://dzone.com/DWQF  #linux,APP
+143,ValidationError from mandrill with google app engine's urlfetch http://pyq.io/so/16260022  #python,APP
+144,"very impressed by the http://mandrill.com/  site - spotless product, marketing & pricing",APP
+145,We're unifying MailChimp and Mandrill data. Beware of hummingbirds with tiny cheetah heads. http://bit.ly/1035KIO ,APP
+146,We've simplified and reduced pricing for everyone. Hooray! http://blog.mandrill.com/new-simpler-pricing.html …,APP
+147,We’re Unifying Your Mandrill and MailChimp Data | MailChimp Email Marketing Blog http://bit.ly/Z0iBZM ,APP
+148,"Whaaat, I didn't know @MailChimp had an email delivery api service thingy: @mandrillapp. Neat: http://www.mandrill.com/?utm_source=devcircle&utm_medium=banner&utm_campaign=carbon …",APP
+149,"would like to send emails for welcome, password resets, payment notifications, etc. what should i use? was looking at mailgun/mandrill",APP
+150,Zapier Makes Mandrill Integration Easy | Mandrill Email Platform Blog http://buff.ly/XW8EzX  #lightweight #integration,APP
+151,¿En donde esta su remontada Mandrill?,OTHER
+152,".@Katie_PhD Alternate, 'reproachful mandrill' cover of @DavidQuammen's Spillover",OTHER
+153,".@theophani can i get ""drill"" in there? it would be a picture of a mandrill holding a drill. somethin.",OTHER
+154,“@ChrisJBoyland: Baby Mandrill Paignton Zoo 29th April 2013: http://youtu.be/QpjOffyLXGg?a via @YouTube”. This is just so cute!,OTHER
+155,"“@MISSMYA #NameAnAmazingBand MANDRILL!” Mint Condition, Maroon 5, The Fray.",OTHER
+156,“Fat City Strut” by Mandrill is my new jam. http://t.thisismyjam.com/siftdigital/_5jl4tyj …,OTHER
+157,【SOUL TRAIN #22】1973年 MANDRILL 中古盤屋でインパクトのあるジャケットを良く見かけたが音を聴いたのはこの番組（95年）が初めて。少しチカーノが入ったファンキーロック・バンド。生演奏が熱い！ http://youtu.be/h9FI_ZoGFAQ ,OTHER
+158,@alicegreennn_ but how come you didn't have mandrill,OTHER
+159,@As_TomasRoncero a la mierda el mandrill tocate la polla,OTHER
+160,@Burnziey @sjsharkfinatic I have zach mandrill complaint how direct tv stop showing game,OTHER
+161,@charlie29598 #GreatJob #Mandrill,OTHER
+162,@JustDewYou @isma_longo tu no ables sapo que el mandrill pierde mañana,OTHER
+163,"@Khamili_1015 @espsmile t'es vraiment idiot comme si elle comprenais les kr7 idiot , cancre , mandrill , babouin , bico!",OTHER
+164,"@mandrill ""The venue should be opening once the 150t of coffee beans has arrived""",OTHER
+165,"@mandrill @CCP_Manifest @CCPGames don't go to Glasgow, it's a horrible dangerous place full of drunken vicious gits, oh wait, eve players...",OTHER
+166,@mandrill @CCPGames I hope they record the whole thing with high quality audio.,OTHER
+167,"@mandrill @ccpgames Plus, we have a faint CCP Seagull in the background from the 2nd stream...",OTHER
+168,@mandrill @Freebooted probably try to corner the spice market and become a demigod by fusing with poorly-understood body modifications?,OTHER
+169,@mandrill @Freebooted. I want to say Heinlein but he'd just have a lot of clone orgies #tweetfleet,OTHER
+170,@mandrill @HilmarVeigar ZOMG Want that jacket,OTHER
+171,@mandrill @j_smedley is around here somewhere... He'd know.,OTHER
+172,@mandrill @Kelduum @ReesNoturana @webspaceships @whistlerbean @MaxUrsa Hiding fleets behind moons sounds soo cool ;),OTHER
+173,@mandrill @kelduum @webspaceships @whistlerbean @maxursa Too bad all these ideas means a fundamentally different game.,OTHER
+174,@mandrill @whistlerbean #eveonline we totally would!,OTHER
+175,@mandrill @Yara_Ash @Freebooted o/ we wish you were here!,OTHER
+176,"@mandrill About 5"" long or so.",OTHER
+177,"@mandrill Ah seen. No, I meant Britain actually having a summertime lol Temporal shift not good :/",OTHER
+178,"@mandrill ahh. I'd have to save for 10 years to go to ff, so imma just save for the CE instead :D",OTHER
+179,@mandrill and this is why I'm here :-),OTHER
+180,@mandrill Been trying to look up more of these places I read about or hear about but never see,OTHER
+181,@mandrill best thing ever!,OTHER
+182,"@mandrill Cheers for the free proofing service - always good to have an extra set of eyes, although the GameSkinny editors are pretty sharp.",OTHER
+183,@mandrill coming soon!,OTHER
+184,@mandrill Do this with ship skins and alliance logos and I will throw my ENTIRE BANK ACCOUNT at CCP. You hear me @CCPGames? #tweetfleet,OTHER
+185,@mandrill HAGGIS VICTOR,OTHER
+186,@mandrill I was just going to tweet you that lol #evefanfest ;),OTHER
+187,"@mandrill I wouldn't be surprised if there are typos though, gonna take a while for my brain to fully recover from Fanfest.",OTHER
+188,"@mandrill In EVE, nothing is too far. :)",OTHER
+189,@mandrill n! / ( k! * ( n - k )! ) where n = 5 and k = 4 CORRECTION,OTHER
+190,@mandrill Quite true. I'd kill for frigate / cruiser models.,OTHER
+191,"@mandrill resubbed all four accounts, just can't stay away",OTHER
+192,"@mandrill Thanks mate, that means a lot - mainly that CCP's evil Fanfest brainwashing technology is as effective as ever. ;)",OTHER
+193,@mandrill u talking abt the CE?,OTHER
+194,"@mandrill we have no one with amazing hair to rally around. Fortunately, we picked up a pink hat.",OTHER
+195,@mandrill We'd love to get your feedback! You can send us suggestions here: http://bit.ly/XYe0tL  ^B,OTHER
+196,@mandrill where?.. On twitch ?,OTHER
+197,@mandrill Winamp is still my choice for music. CCCP for video playback.,OTHER
+198,"@mandrill Would've included that, but the 140 character limit prevented me. :(",OTHER
+199,@MISSMYA whatchu know about mandrill....wow,OTHER
+200,@Moloko_b @mandrill @CCP_Guard well... At least we have an additional method of diplomacy...,OTHER
+201,"@MrChuckD Got a Mandrill t-shirt today, it came with a nice hand-written letter. Shop here, support good people! http://mandrillmusic.com/store-2 ",OTHER
+202,@NaattMarcos15 @RaquelTarari quevaaaaa por ser del mandrill no no si te pasaras a otro equipo si jaja LL,OTHER
+203,@namimaaaa mandrillってとこヾ(＠⌒ー⌒＠)ノ おしゃれだし、美容師さんも素敵(((o(*ﾟ▽ﾟ*)o))),OTHER
+204,@orgullobiri  po entonces para que coño a venido aqui que se hubiese ido al real mandrill castilla y que se hubiese pudrido de asco,OTHER
+205,@Ouhyeah84 ahora has evolucionado a mandrill!!!!,OTHER
+206,@pyrostinger That's a Mandrill!,OTHER
+207,"@strangelocation @mandrill @ccp_guard And on that note, gl #CSM8 :p",OTHER
+208,"@yrecruit_chris I like sendgrid, but Mandrill is great too.",OTHER
+209,"@zptr @Freebooted @mandrill @kirithkodachi Probably need permission, you can't knit a Jayne hat anymore without threat of legal action.",OTHER
+210,#FF Happy Friday to some of our new followers! @Siriasly @jheanley @ThatMattT @JediLaura @psypsoft @PictureChanging @mandrill,OTHER
+211,#NameAnAmazinGBand Mandrill,OTHER
+212,#video:  Outside this Universe The Rainbow Mandrills video Christmas Mos Nicolae Original Song Santa Mandrill http://dlvr.it/3FSdp8 ,OTHER
+213,♥ღ ♫♥ Need to Park that Star on your page! ♥Ty! @frankierocker MANDRILL A VERY DIVERSE 70s GROUP W/BROOKLYN ROOT... ♫ http://blip.fm/~1eihrm ,OTHER
+214,a latten is a mandrill: gun-shy and numbing,OTHER
+215,"a mandrill is a seedtime: crackbrained, not slicker",OTHER
+216,Adicionei como favorito um vídeo @YouTube de @smoothmcgroove http://youtu.be/hyx9-kWYjDI?a  Megaman X - Spark Mandrill Acapella,OTHER
+217,Adicionei como favorito um vídeo @YouTube de @smoothmcgroove http://youtu.be/hyx9-kWYjDI?a  Megaman X - Spark Mandrill Acapella,OTHER
+218,al carajo el mandrill!!!!!!!!!oleoleoleoleoeleoleoeeoleoeleoleole,OTHER
+219,Ala mandrill!!!jajajaja a mamarla hoy vosotrosss!!!,OTHER
+220,"Also, don't get into a mandrill fight with Sam Sykes after 2AM. #wordstothewise He will make you google things you regret, forever.",OTHER
+221,An hispanic mandrill gets raucous original save his occupation near high entertainment industry lodge. in back o: .hru,OTHER
+222,And looks like a fat mandrill,OTHER
+223,"Anyway, yeah.  That's a thing that's going on.  Reincarnated mandrill-men.  Expect nothing less from Sam Sykes.",OTHER
+224,Arin did the spark mandrill trick I was wondering if he would :'),OTHER
+225,Audio: Mandrill - Happy Beat This is a funk song by a band who liked to wear hats and has a banjo in it. How... http://tmblr.co/Z3ocQyj_JGWB,OTHER
+226,Cannot believe I am the only one in a @mandrill 2012 #tweetfleet t-shirt at the meet!,OTHER
+227,Chill Penguin and Spark Mandrill down. #megamanx,OTHER
+228,"Cuando pase el Bafici y se hayan perdido Mandrill, Mirageman, Mujer metralleta y Kiltro a mí no me lloren: http://www.youtube.com/watch?v=x-9CUFDUM_c …",OTHER
+229,De los creadores de #Kiltro #Mirageman y #Mandrill Ahora atacan con #TráiganmeLaCabezaDeLaMujerMetralleta TR http://youtu.be/RHqozwN1ZYI ,OTHER
+230,Did this producer sample Mandrill!? I KNOWWWWWWWW you ain't pay for this! BYE SON!,OTHER
+231,Don't knock asshats. Philip Treacy's new line of Mandrill Derrière Fascinators is sublime.,OTHER
+232,"Don't know how to name your novel? I say, call it PURPLE MANDRILL COVERED IN FRECKLES: http://www.kseniaanske.com/blog/2013/4/8/naming-your-novel.html …",OTHER
+233,E essa do Mega Man X  (Spark Mandrill) - Muito show! http://fb.me/xquh7u1n ,OTHER
+234,"Easiest Mega Man boss fights ever: Spark Mandrill, Junk Man, Spring Man, and Cut Man.",OTHER
+235,Esa tambien me gusta mucho *Escuchando Spark Mandrill por Mega Man X #nowplaying #musicmonday  http://grooveshark.com/s/Spark+Mandrill/2NjwQv?src=5 … vía @grooveshark,OTHER
+236,esta cancion sale cuando le disparan a Mandrill en la cabeza ( muere aparentemente ) y salen (@YouTube - http://youtu.be/6B6GwllebrM?a ),OTHER
+237,Fencewalk is STOOPID RT @MISSMYA #NameAnAmazingBand MANDRILL!,OTHER
+238,Fernando Vargas MANDRILL MEXICAN PRIDE MMA,OTHER
+239,Get it get it get it get it goddamn! ♫ Can You Get It (Suzie Caesar) – Mandrill http://spoti.fi/TlEZyp  #Spotify,OTHER
+240,Git It All - Mandrill - Listen Now http://bit.ly/sylJDa,OTHER
+241,Git It All - Mandrill http://rdo.to/KZKO  #nowplaying #listenlive,OTHER
+242,Gooooooolllllll Del Mandrill,OTHER
+243,Gostei de um vídeo @YouTube de @franciscodanrl1 http://youtu.be/Gv98_b1EOIM?a  Megaman X Gameplay Parte #5 Spark Mandrill,OTHER
+244,Gostei de um vídeo @YouTube de @smoothmcgroove http://youtu.be/hyx9-kWYjDI?a  Megaman X - Spark Mandrill Acapella,OTHER
+245,Gostei de um vídeo @YouTube de @smoothmcgroove http://youtu.be/hyx9-kWYjDI?a  Megaman X - Spark Mandrill Acapella,OTHER
+246,Gostei de um vídeo @YouTube de @smoothmcgroove http://youtu.be/hyx9-kWYjDI?a  Megaman X - Spark Mandrill Acapella,OTHER
+247,Gostei de um vídeo @YouTube de @smoothmcgroove http://youtu.be/hyx9-kWYjDI?a  Megaman X - Spark Mandrill Acapella,OTHER
+248,Gostei de um vídeo @YouTube de @smoothmcgroove http://youtu.be/hyx9-kWYjDI?a  Megaman X - Spark Mandrill Acapella,OTHER
+249,Gostei de um vídeo @YouTube de @smoothmcgroove http://youtu.be/hyx9-kWYjDI?a Megaman X - Spark Mandrill Acapella,OTHER
+250,Guess the good mandrill's back! Rafiki is the name. 😁,OTHER
+251,HOY a las 12.35 h No se pierdan MANDRILL de Ernesto Díaz http://j.mp/YkekjO   en el @recoletamall 15 #BAFICI,OTHER
+252,I like pink butts and I cannot lie... Male #mandrill showing off his assets. @ Congo Gorilla Forest http://instagram.com/p/YaUp6vNfH_/ ,OTHER
+253,I liked a @YouTube video from @smoothmcgroove http://youtu.be/hyx9-kWYjDI?a  Megaman X - Spark Mandrill Acapella,OTHER
+254,I love the part in Lion King when the mandrill beats the shit out of the hyenas hahahahaha 👊🐒,OTHER
+255,I'm a Mandrill... Of course my inner animal has great hair likes to show off his toosh... #spiritanimal http://bit.ly/wrt54R ,OTHER
+256,"I'm following @lostbhoy, @mandrill, @Girobabies, @bazzabhoy87, @Linda_Wilsonn and 2 others on @spreaker http://www.spreaker.com/user/joebone ",OTHER
+257,ich brauch'n einen chillig gejammten funky mother auf'n freitag abend :3 http://www.youtube.com/watch?v=i6Z_bkj5BBw … mandrill = musikalische götter.,OTHER
+258,Izasata Mandrill-Striker of Eldnoe rolls in to A Whirlpool and is overran by A Big Mind Flayer.,OTHER
+259,Jammin as I get ready to head out in a bit. ♫ Fencewalk – Mandrill http://spoti.fi/O2MhpA  #Spotify,OTHER
+260,Jayne Mandrill & Christopher Bream #animalcelebrities,OTHER
+261,Kaminsky manages toward exasperate an bugging in company with patrovita's reduce to order ruff mandrill rocca he:,OTHER
+262,Le mandrill se casse #instantchiale,OTHER
+263,Mandrill - Aspiration Flame,OTHER
+264,Mandrill - Mango Meat http://www.youtube.com/watch?v=3ohVxEaVQvI …,OTHER
+265,Mandrill Get It All 1973: http://youtu.be/h9FI_ZoGFAQ  via @youtube  funky gift from 1973!,OTHER
+266,Mandrill on Classic Soul Train: http://youtu.be/5qA4g3v1Uwc  via @youtube,OTHER
+267,"Meet new PUA artist ""Mandrill."" He's a monkey",OTHER
+268,"Mega Man X's Spark Mandrill Theme, In An Amazing A Capella:  The spectacularly-bearded Smooth McGroove... http://bit.ly/XRoHj8  #kotaku",OTHER
+269,Megaman X - Spark Mandrill Acapella: http://youtu.be/hyx9-kWYjDI  @youtubeさんから,OTHER
+270,Megaman X - Spark Mandrill Acapella: http://youtu.be/hyx9-kWYjDI  THIS IS AMAZING HOLY SHIT,OTHER
+271,Megaman X - Spark Mandrill Acapella: http://youtu.be/hyx9-kWYjDI @youtubeさんから,OTHER
+272,Megaman X - Spark Mandrill Acapella: http://youtu.be/hyx9-kWYjDI @youtubeさんから　この人の選曲わかってる感,OTHER
+273,"Megaman X fans, I grace you with an incredible Spark Mandrill a capella. http://www.youtube.com/watch?v=hyx9-kWYjDI …",OTHER
+274,"My squad: half-Mandrill, half-Mandela/my band roll 70 deep just like Fela...",OTHER
+275,"Nieuw in de verkoop bij Hoekstra&vanEck Mandrill 20, #Wognum €175.000 kosten koper http://bit.ly/17YwI8V ",OTHER
+276,One Reason is out! http://paper.li/mandrill/1354033093 … ▸ Top stories today via @Sifteo @BlackMajic_,OTHER
+277,Peter Mandrill Son #animalcelebrities,OTHER
+278,"Please help my friend Kumba, the Mandrill, fix his broken leg. http://www.indiegogo.com  search Kumba",OTHER
+279,Que caritas de Gilipollas se le quedaron a los jugadores del Mandrill jajaja,OTHER
+280,Raj shahrukh shogun is an immature mandrill silent endowed with life despite his blood brother which wishes unti: .XzW,OTHER
+281,Silk by Mandrill: http://youtu.be/rtUYx7IF6JM via @youtube,OTHER
+282,Spark mandrill theme #nerdatwork,OTHER
+283,"Spark Mandrill, toma Domecq!",OTHER
+284,Stand by Your Mandrill #AnimalSongs,OTHER
+285,Straight a mandrill as looses voluptuous jump at for his pair may discover fabrication problems.:,OTHER
+286,Stukkie stekst geschreven over muziek voor de minderheid en een Public Enemy original http://www.stpaul.nl/2013/04/mandrill-two-sisters-of-mystery/ …,OTHER
+287,Symphonic Revolutions - Mandrill http://rdo.to/WSJR  #nowplaying #listenlive,OTHER
+288,TAQUIPARIU @jurandirfilho olha isso: Mega Man X - Spark Mandrill Theme Acapella - http://www.youtube.com/watch?v=hyx9-kWYjDI …,OTHER
+289,The @TBobbyMitchell 7s cartoon character is live now in RFU online content. Spot him and win big prizes #7shunt #mandrill,OTHER
+290,"The #drill & #mandrill were originally classed with #baboons, but have since been put into their own genus, 'Mandrillus'.",OTHER
+291,"The two songs in my head went like this: ""Devil in a new dress"" for the first half, ""Can you get it"" by Mandrill for the second half.",OTHER
+292,"this little girl is a mandrill. Milwaukee County Zoo, March, 2013. http://twitpic.com/cawbaj ",OTHER
+293,Today's music choice: heavy metal cover of Mega Man X's Spark Mandrill theme. What the hell is a Mandrill? http://www.youtube.com/watch?v=XxC0VjiUQAQ …,OTHER
+294,Ushindi the mandrill can't get enough of the snow! Especially when it's covered in fruit + sunflower seeds: http://ow.ly/hYjcq  #FPZoo,OTHER
+295,Vamos atleti !!! Puta mandrill !!!!,OTHER
+296,"Why Are Monkey Butts So Colorful?: Mandrill Wikimedia CommonsPlus, the best colored monkey but... http://bit.ly/ZGBN5d  #PopularScience",OTHER
+297,"You can now experience the thrills of classic PC gaming with Mandrill Maze. http://mandrillmaze.tumblr.com/  Why? Ehh, I don't know.",OTHER
+298,ジャンルごった煮のバンド、Mandrillの75年作！オススメはOddiseeがサンプリングしたB3「Silk」メロウながらも力強いグルーヴの気持ちイイ1曲です。ジワジワ感が堪りません！Mandrill / Solid http://bit.ly/mTRifR ,OTHER
+299,パーカッシヴなビートに重厚なベースやスペイシーなシンセ等が絡むB1が◎な80年の好作！シッカリ打ったドラムながらもメロウなB4などもナイス！Mandrill / Getting In The Mood http://bit.ly/9y5E3f ,OTHER
+300,最近ではNottz feat Pete Rock / Turn It Upでも使われていたレア・グルーヴ/ブレイク・クラシック！Mandrill / Mango Meat http://bit.ly/VO4XG8 ,OTHER
